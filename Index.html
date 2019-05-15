@@ -1,0 +1,155 @@
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+         $(document).ready(function() { 
+            $("#MoreArrow").click(function() { 
+                if($('#MoreLess').text() == "MORE" ) {
+					$('#MoreLess').text("LESS") 
+				} else {
+					$('#MoreLess').text("MORE")
+				}
+            }); 
+        });
+		
+		$(document).ready(function() { 
+			$('#MoreArrow').click( function(){
+				$('#MenuArrow').toggleClass('glyphicon-triangle-bottom').toggleClass('glyphicon-triangle-top');
+			});
+		});	
+  </script>
+  
+  <style>
+  
+	body { font-family: sans-serif; background: #eee;}
+	.Site { display: flex; min-height: 100vh; flex-direction: column;}
+	.Site-content { flex: 1;}
+	a, h1, h2 { color: #fcfcfc; }
+	h1, h2 { font-family: sans-serif; margin: 0; }
+	h1{ border-bottom: 2px solid #eee; }
+	h2{ font-size: 1.5em; font-weight: bold;}
+	h3{ font-size: 1.2em;}
+	.page           { margin: 2em auto; width: 35em; border: 5px solid #ccc;
+					  padding: 0.8em; background: gray ; }
+	
+	
+	.icon-button {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		outline: none;
+		border: 0;
+		background: transparent;
+	}
+	a:hover, a:visited, a:active, a:focus   {color: white; text-decoration: none;}
+	.lists {text-align:left; margin: 0px}
+
+	
+  </style>
+  <title>JASON MILLER</title>
+</head>
+
+<body class="Site">
+    <main class="Site-content">
+        <div class="jumbotron text-center" style="height: 50px">
+			<h1>JASON MILLER</h1>
+		</div>
+        
+        
+        <div class ="container">
+			<div class = "row">
+				<div class="col-sm-4 text-center" style="background-color:orange">
+                    <a href="https://dev.to/jasoninternet" target="_blank">Dev.to</a>
+                </div>
+                <div class="col-sm-4 text-center" style="background-color:blue">
+                    <a href="https://www.linkedin.com/in/jason-miller-334a24a/" target="_blank" >LinkedIn</a>
+                </div>
+                <div class="col-sm-4 text-center" style="background-color:brown">
+                    <a href="https://github.com/jasontmiller" target="_blank">GitHub</a>
+                </div>
+			</div>
+			<div class = "row">
+				<div class="col-sm-12 text-center" style="background-color:red">
+				<a href="mailto:jason.miller.t@gmail.com?subject=Hey, Jason">E-mail</a>
+				</div>
+            </div>
+			<div class="collapse collapsed" id="collapseZone" style="margin-top: 10px"> 
+				<div class = "row">
+				
+					<div class="col-sm-12 text-center" style="background-color:black; color: white;">
+						<a href ="#ConsultZone" data-toggle='collapse'>Contracting</a>
+					</div>
+				</div>
+				
+				<div class="collapse collapsed" id="ConsultZone" style="margin-top: 10px"> 
+					<div class = "row">
+						<div class="col-sm-6 text-center" style=" margin-top: 5px;">
+							<p style="font-weight:700; margin-bottom: 0px">SERVICES</p>
+							<p class="lists">CRM Configuration</p>
+							<p class="lists">Small Web Application Development</p>
+							<p class="lists">Data Integrations</p>
+							<p class="lists">Business Systems Analysis / Documentation</p>
+						</div>
+						<div class="col-sm-6 text-center" style=" margin-top: 5px;">
+							<p style="font-weight:700">CLIENTS / PROJECTS</p>
+							<p class="lists"><i>Landesa</i> - Due Dilligence Tool</p>
+							<p class="lists"><i>Northwest Center</i> - Custom Report Development</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "row">
+					
+					<div class="col-sm-12 text-center" style="background-color:black; color: white; margin-top: 10px">
+						<a href>>>> Download Full CV <<<</a>
+					</div>
+					
+					
+				</div>
+            </div>
+			<div class = "row" style="margin-bottom: 10px; margin-top: 10px;">
+			<!-- <span class="glyphicon glyphicon-triangle-bottom" style="color: red;"></span>
+				<p style="display:inline; color:red" id="MoreLess">MORE</p> -->
+				<div class="col-sm-5 text-center">
+						
+				</div>
+				<div class="col-sm-2 text-center">
+					<button type="button" class="icon-button" data-toggle='collapse' href='#collapseZone' id="MoreArrow">
+					<span class=' glyphicon glyphicon-triangle-bottom' style="color: red;" id="MenuArrow"></span>
+					<p id="MoreLess" style="font-size:smaller">MORE</p>
+				</button>	
+				</div>
+				<div class="col-sm-5 text-center">
+						
+				</div>
+				  
+            </div>
+			
+		
+		</div>
+			
+               
+		
+    </main>
+	<footer>
+		<div class ="container">
+			<div class = "row">
+				<div class="col-sm-11 text-center" >
+				</div>
+				<div class="col-sm-1 text-center" style="background-color:red; color: white;">
+					2019
+				</div>
+							
+			</div>
+		</div>
+	
+	</footer>
+</body>
+
+</html>
